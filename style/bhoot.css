@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Georgia", serif;
+}
+
+
+.navbar {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin: 0 18px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.reserve-btn {
+  background: #0d1b44;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+
+.hero {
+  height: 100vh;
+  background-image: url("https://www.google.com/imgres?q=otos%25Kumbhalgarh-fort%20psig%3DAOvVaw21Ov4XCRZK1_zRnb_phMA2%26ust%3D1763899460166000%20%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBUQjRxqFwoTCODnhtjbhZEDFQAAAAAdAAAAABAE%22&imgurl=https%3A%2F%2Fs7ap1.scene7.com%2Fis%2Fimage%2Fincredibleindia%2F2-kumbhalgarh-fort-udaipur-rajasthan-attr-hero%3Fqlt%3D82%26ts%3D1742175707597&imgrefurl=https%3A%2F%2Fwww.incredibleindia.gov.in%2Fen%2Frajasthan%2Fudaipur%2Fkumbhalgarh-fort&docid=ezob9yJkDjJNmM&tbnid=lPrRAG21brRH-M&vet=12ahUKEwjF6rmc3YWRAxUZ4zgGHYv9ETcQM3oECBMQAA..i&w=1280&h=720&hcb=2&ved=2ahUKEwjF6rmc3YWRAxUZ4zgGHYv9ETcQM3oECBMQAA");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding-top: 120px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(100, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  top: 20%;
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 26px;
+  margin: 0 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: white;
+  color: #222;
+}
+
+.btn.dark {
+  background: #0d1b44;
+  color: white;
+}
