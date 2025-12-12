@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhootkal.io</title>
-  <link rel="stylesheet" href="bhoot.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhootkal</title>
+    <link rel="stylesheet" href="bhoot.css">
 </head>
 <body>
 
+    <header>
+        <h1>Heritage Explorer</h1>
+        <p>Maharashtra's Historical Marvels: What, Why, and How</p>
+    </header>
 
-  <header class="navbar">
-    <div class="logo">Bhootkal.io</div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">The kals</a>
-      <a href="#">About</a>
-      <a href="#">Famous Events</a>
-      <a href="#">Contact</a>
+    <nav>
+        <ul>
+            <li><a href="#" class="nav-link active" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" class="nav-link" onclick="showPage('shaniwar')">Shaniwar Wada</a></li>
+            <li><a href="#" class="nav-link" onclick="showPage('sinhagad')">Sinhagad Fort</a></li>
+            <li><a href="#" class="nav-link" onclick="showPage('ajanta')">Ajanta Caves</a></li>
+        </ul>
     </nav>
-    <button class="reserve-btn"></button>
-  </header>
-  <section class="hero">
-    <div class="overlay"></div>
 
-    <div class="hero-content">
-      <h1>Relive the Ancient<br>History of India</h1>
-      <p>Explore India's story — from royal palaces to legendary battles.</p>
+    <main>
+        <section id="home" class="page-content">
+            <h2>Welcome, Traveler</h2>
+            <p>Select a historical site from the menu above to explore its history using our "What, Why, How" model.</p>
+            
+            <div class="interactive-box">
+                <p id="tip-text">Click the button below for a travel tip!</p>
+                <button id="tip-btn">Get Travel Tip</button>
+            </div>
+        </section>
 
-      <div class="buttons">
-        <button class="btn"></button>
-        <button class="btn dark"></button>
-      </div>
-    </div>
-  </section>
+        <section id="shaniwar" class="page-content hidden">
+            <h2>Shaniwar Wada</h2>
+            
+            <div class="content-block">
+                <h3>What is it?</h3>
+                <p>Shaniwar Wada is a 13-story palace fort in Pune. It served as the seat of the Peshwas of the Maratha Empire until 1818.</p>
+            </div>
 
+            <div class="content-block">
+                <h3>Why was it built?</h3>
+                <p>It was built to demonstrate the power of the Peshwas and serve as the capital residence. It was the center of Indian politics in the 18th century.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>How was it built?</h3>
+                <p>The foundation was laid in 1730 AD using teak, lime, and stone. Though a massive fire in 1828 destroyed the wooden interiors, the heavy stone fortification walls remain intact.</p>
+            </div>
+        </section>
+
+        <section id="sinhagad" class="page-content hidden">
+            <h2>Sinhagad Fort</h2>
+            
+            <div class="content-block">
+                <h3>What is it?</h3>
+                <p>Sinhagad (The Lion's Fort) is a hill fortress located southwest of Pune. It was previously known as Kondhana.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Why was it important?</h3>
+                <p>It was a strategic military outpost due to its steep natural protection. It is famous for the Battle of Sinhagad (1670), where Tanaji Malusare fought bravely to recapture it.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>How was it built?</h3>
+                <p>The fort is built atop a steep cliff in the Bhuleshwar range of the Sahyadris. Its walls were constructed to blend with the natural rock escarpments, making it nearly impossible to breach.</p>
+            </div>
+        </section>
+
+        <section id="ajanta" class="page-content hidden">
+            <h2>Ajanta Caves</h2>
+            
+            <div class="content-block">
+                <h3>What is it?</h3>
+                <p>The Ajanta Caves are approximately 30 rock-cut Buddhist cave monuments in the Aurangabad district, dating from the 2nd century BCE to about 480 CE.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>Why was it created?</h3>
+                <p>They served as retreats for Buddhist monks during the monsoon season and as resting places for merchants and pilgrims. They are worship halls and monasteries.</p>
+            </div>
+
+            <div class="content-block">
+                <h3>How was it made?</h3>
+                <p>They were carved directly into a horseshoe-shaped cliff of basalt rock. Artisans chiseled the rock from top to bottom to create intricate sculptures and columns without adding any external material.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <button id="theme-toggle">Toggle Dark Mode</button>
+        <p>First Year Project - Web Technologies</p>
+    </footer>
+
+    <script src="bhoot.js"></script>
 </body>
 </html>
