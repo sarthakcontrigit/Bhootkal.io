@@ -2,17 +2,22 @@
 function showPage(pageId) {
     const allPages = document.querySelectorAll('.page-content');
     
-    allPages.forEach(page => {
-        page.classList.add('hidden');
-    });
+
+    allPages.forEach(page => page.classList.add('hidden'));
+
 
     const selectedPage = document.getElementById(pageId);
     if (selectedPage) {
         selectedPage.classList.remove('hidden');
     }
 
+ 
+    document.body.className = "";  
+    document.body.classList.add(pageId + "-bg");
+
     updateActiveNav(pageId);
 }
+
 
 function updateActiveNav(pageId) {
   
